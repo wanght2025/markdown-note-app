@@ -43,7 +43,7 @@ print("Hello world")
           <div className="donate-popup">
             <img src="/maid-cartoon.png" alt="女仆图" className="maid-img" />
             <img src="/wechat-donate.jpg" alt="微信打赏" className="qr-img" />
-            <p>老板大气💖</p>
+            <p>老板这波打赏功在千秋，建议刻进区块链💖</p>
             <button onClick={() => setShowQR(false)} className="close-btn">关闭</button>
           </div>
         )}
