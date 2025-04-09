@@ -37,15 +37,19 @@ print("Hello world")
 
       {/* 打赏区 */}
       <div className="donate-container">
-        <button onClick={() => setShowQR(!showQR)}>☕ 打赏我</button>
+        <button onClick={() => setShowQR(!showQR)}>☕ 请我喝杯咖啡？</button>
+
         {showQR && (
-          <div>
-            <img src="/wechat-donate.jpg" alt="微信打赏" />
-            <p>感谢支持！</p>
+          <div className="donate-popup">
+            <img src="/maid-cartoon.png" alt="女仆图" className="maid-img" />
+            <img src="/wechat-donate.jpg" alt="微信打赏" className="qr-img" />
+            <p>老板大气💖</p>
+            <button onClick={() => setShowQR(false)} className="close-btn">关闭</button>
           </div>
         )}
-      </div>
-    </div>
+      </div> {/* ←←← 这里是你缺失的结尾标签 */}
+
+    </div> // 这是最外层 <div id="root"> 的闭合
   )
 }
 
