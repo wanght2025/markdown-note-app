@@ -31,9 +31,19 @@ textarea {
   overflow-y: auto;
 }
 
+/* 打赏部分 */
 .donate-container {
   text-align: center;
   margin-top: 2rem;
+}
+
+.maid-clickable {
+  width: 120px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.maid-clickable:hover {
+  transform: scale(1.1);
 }
 
 .donate-popup {
@@ -45,16 +55,10 @@ textarea {
   padding: 1rem;
 }
 
-.maid-img {
-  width: 150px;
-  margin-bottom: 1rem;
-}
-
 .qr-img {
   width: 180px;
   border: 2px dashed #aaa;
   border-radius: 10px;
-  margin-bottom: 0.5rem;
 }
 
 .close-btn {
@@ -66,7 +70,6 @@ textarea {
   cursor: pointer;
   font-size: 0.9rem;
 }
-
 .close-btn:hover {
   background-color: #d43c3c;
 }
