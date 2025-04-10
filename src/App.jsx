@@ -26,7 +26,6 @@ print("Hello world")
 
   return (
     <div id="root">
-      {/* 主区域：左右结构 */}
       <div className="container">
         <textarea
           value={markdown}
@@ -38,25 +37,22 @@ print("Hello world")
         </div>
       </div>
 
-      {/* 打赏入口：用女仆图替代按钮 */}
+      {/* 打赏区域 */}
       <div className="donate-container">
-        <img
-          src="/maid-cartoon.png"
-          alt="点击打赏"
-          className="maid-clickable"
-          onClick={() => setShowQR(true)}
-        />
+        <div className="maid-row" onClick={() => setShowQR(true)}>
+          <img src="/maid-cartoon.png" alt="女仆" className="maid-clickable" />
+          <div className="donate-text">
+            <div>☕ 请作者喝杯咖啡！</div>
+            <div className="donate-sub">Buy me a coffee!</div>
+          </div>
+        </div>
 
         {showQR && (
           <div className="donate-popup">
             <img src="/wechat-donate.jpg" alt="微信打赏" className="qr-img" />
-            <button
-              onClick={() => setShowQR(false)}
-              className="close-btn"
-              style={{ marginTop: '1rem' }}
-            >
-              关闭
-            </button>
+            <div className="close-center">
+              <button onClick={() => setShowQR(false)} className="close-btn">关闭</button>
+            </div>
           </div>
         )}
       </div>
@@ -65,4 +61,3 @@ print("Hello world")
 }
 
 export default App
-
