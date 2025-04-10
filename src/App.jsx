@@ -37,10 +37,10 @@ print("Hello world")
         </div>
       </div>
 
-      {/* 打赏区域 */}
+      {/* 打赏入口：女仆+文字一块可点击 */}
       <div className="donate-container">
         <div className="maid-row" onClick={() => setShowQR(true)}>
-          <img src="/maid-cartoon.png" alt="女仆" className="maid-clickable" />
+          <img src="/maid-cartoon.png" alt="点击打赏" className="maid-clickable" />
           <div className="donate-text">
             <div>☕ 请作者喝杯咖啡！</div>
             <div className="donate-sub">Buy me a coffee!</div>
